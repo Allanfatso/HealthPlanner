@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -24,8 +26,8 @@ class User extends Authenticatable
         'email',
         'password',
         'goal',
-        'current_weight',
-        'target_weight',
+        'current_weight', //add to preference tags
+        'target_weight', // add to preference tags
     ];
 
     /**
